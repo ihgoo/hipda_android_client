@@ -20,15 +20,15 @@ import com.itheima.hipda.ApplicationController;
 public class StringRequestCookie extends StringRequest {
 
 	private String mCookie;
-	
 
 	@Override
 	protected Response<String> parseNetworkResponse(NetworkResponse response) {
+		
+		// 仿cookies store, 存储cookies
 		HashMap<String, String> map = new HashMap<String, String>();
 		for (String s : response.headers.keySet()) {
             if (s.contains("Set-Cookie")) {
             	mCookie = response.headers.get(s);
-            	
             	String[] cookieWhole = mCookie.split("; ");
             	
             	for (String string : cookieWhole) {

@@ -25,8 +25,16 @@ public class MainActivity extends SlidingFragmentActivity {
 		sm = this.getSlidingMenu();
 		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
 		sm.setMode(SlidingMenu.LEFT);
-		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 
+		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+		
+		//设置滑动菜单的阴影
+		sm.setShadowDrawable(R.drawable.shadow);
+		//设置滑动菜单阴影的宽度
+		sm.setShadowWidthRes(R.dimen.shadow_width);
+		
+		
+		
 		MenuFragment menuFragment = new MenuFragment();
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.menu, menuFragment).commit();
@@ -40,7 +48,7 @@ public class MainActivity extends SlidingFragmentActivity {
 	public void switchFragment(Fragment fragment) {
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.content, fragment).commit();
-		// 设置滑动菜单的开关，如果是开了就关，如果是关了就开
+		// 设置滑动菜单的开关
 		sm.toggle();
 	}
 
