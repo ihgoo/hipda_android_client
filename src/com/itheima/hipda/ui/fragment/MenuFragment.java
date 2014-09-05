@@ -49,11 +49,6 @@ public class MenuFragment extends Fragment {
 		int id = view.getId();
 		switch (id) {
 		case R.id.tv_message:
-			
-			
-			
-			
-			
 			StringRequestCookie stringRequestCookie = new StringRequestCookie("http://www.baidu.com/", new Listener<String>() {
 
 				@Override
@@ -69,8 +64,7 @@ public class MenuFragment extends Fragment {
 			});
 		
 			
-			ApplicationController.getInstance().addToRequestQueue(stringRequestCookie);
-//			
+			
 			
 //			((MainActivity) getActivity()).switchFragment(fragment);
 			break;

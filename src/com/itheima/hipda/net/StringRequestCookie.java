@@ -12,6 +12,11 @@ import com.android.volley.Response.Listener;
 import com.android.volley.toolbox.StringRequest;
 import com.itheima.hipda.ApplicationController;
 
+/**
+ * 保存response中的cookies的volley请求
+ * @author KelvinHu
+ *
+ */
 public class StringRequestCookie extends StringRequest {
 
 	private String mCookie;

@@ -13,6 +13,11 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.itheima.hipda.ApplicationController;
 
+/**
+ * 自定义的volley请求
+ * @author KelvinHu
+ *
+ */
 public class StringRequestProxy extends StringRequest {
 
 
@@ -31,7 +36,6 @@ public class StringRequestProxy extends StringRequest {
 	public StringRequestProxy(String url, Listener<String> listener,
 			ErrorListener errorListener) {
 		super(url, listener, errorListener);
-
 	}
 	
 	
