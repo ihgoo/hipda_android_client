@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </array>
+    <string-array name="forums">
+        <item>Discovery</item>
+        <item>Buy &amp; Sell</item>
+        <item>Geek Talks</item>
+        <item>E-INK</item>
+        <item>疑似机器人</item>
+    </string-array>
+    <integer-array name="forums_id">
+        <item>2</item>
+        <item>6</item>
+        <item>7</item>
+        <item>59</item>
+        <item>57</item>
+    </integer-array>
+    <string-array name="left_menu">
+        <item>论坛</item>
+        <item>搜索</item>
+        <item>我的回复</item>
+        <item>我的收藏</item>
+        <item>短消息</item>
+        <item>帖子消息</item>
+        <item>发表新帖</item>
+        <item>设置</item>
+        <item>切换主题</item>
+    </string-array>
+    <string-array name="pref_login_question_list_titles">
+        <item>无</item>
+        <item>母亲的名字</item>
+        <item>爷爷的名字</item>
+        <item>父亲出生的城市</item>
+        <item>您其中一位老师的名字</item>
+        <item>您个人计算机的型号</item>
+        <item>您最喜欢的餐馆名称</item>
+        <item>驾驶执照的最后四位数字</item>
+    </string-array>
+    <string-array name="pref_login_question_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="pref_post_textsize_adjust_titles">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>+1</item>
+        <item>+2</item>
+        <item>+3</item>
+        <item>+4</item>
+    </string-array>
+    <string-array name="pref_post_textsize_adjust_values">
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
