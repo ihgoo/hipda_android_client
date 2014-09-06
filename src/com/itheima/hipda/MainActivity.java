@@ -1,7 +1,6 @@
 package com.itheima.hipda;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.Window;
 
 import com.itheima.hipda.ui.fragment.MenuFragment;
@@ -36,20 +35,36 @@ public class MainActivity extends SlidingFragmentActivity {
 		
 		
 		MenuFragment menuFragment = new MenuFragment();
-		getSupportFragmentManager().beginTransaction()
+		getFragmentManager().beginTransaction()
 				.replace(R.id.menu, menuFragment).commit();
 	}
 
+	
+	
 	/**
 	 * ChangeFragment
 	 * 
 	 * @param fragment
 	 */
-	public void switchFragment(Fragment fragment) {
-		getSupportFragmentManager().beginTransaction()
+	public void switchFragment(android.app.Fragment fragment) {
+		getFragmentManager().beginTransaction()
 				.replace(R.id.content, fragment).commit();
 		// 设置滑动菜单的开关
 		sm.toggle();
 	}
+	
+	/**
+	 * addFragment
+	 * 
+	 * @param fragment
+	 */
+	public void addFragment(android.app.Fragment fragment) {
+		getFragmentManager().beginTransaction()
+				.add(R.id.content, fragment).commit();
+		// 设置滑动菜单的开关
+		sm.toggle();
+	}
+	
+	
 
 }
