@@ -2,7 +2,6 @@ package com.itheima.hipda.ui.fragment;
 
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
-import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
@@ -10,7 +9,6 @@ import android.preference.PreferenceManager;
 import android.preference.SwitchPreference;
 
 import com.itheima.hipda.R;
-import com.itheima.hipda.bean.SettingHelper;
 
 public class SettingFragment extends PreferenceFragment {
 
