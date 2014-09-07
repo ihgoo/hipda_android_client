@@ -8,6 +8,7 @@ package com.itheima.hipda.utils;
  * @author KelvinHu
  */
 public interface BBSAPI {
+	
 	/**
 	 * 论坛首页
 	 */
@@ -16,6 +17,11 @@ public interface BBSAPI {
 	 * e-link版(游客可访问)
 	 */
 	String HIPDA_EINK = HIPDA_BASE + "/forumdisplay.php?fid=7";
+	
+	/**
+	 * 准备登录的地址
+	 */
+	String HIPDA_PRELOGIN = HIPDA_BASE + "/logging.php?action=login&referer=http:///www.hi-pda.com/forum/index.php&sid=";
 	
 	/** 登录地址 **/
 	String HIPDA_LOGIN = HIPDA_BASE + "/logging.php?action=login&loginsubmit=yes&inajax=1";
