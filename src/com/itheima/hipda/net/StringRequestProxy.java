@@ -11,7 +11,7 @@ import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
-import com.itheima.hipda.ApplicationController;
+import com.itheima.hipda.bean.SettingHelper;
 
 /**
  * 自定义的volley请求
@@ -48,7 +48,7 @@ public class StringRequestProxy extends StringRequest {
 	@Override
 	public Map<String, String> getHeaders() throws AuthFailureError {
 		Map<String, String> map = new HashMap<String, String>();
-        map.put("Cookie", ApplicationController.cookies);
+        map.put("Cookie", "cdb_auth=" + SettingHelper.getInstance().getCookieAuth());
 		return map;
 	}
 

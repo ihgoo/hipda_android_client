@@ -46,6 +46,29 @@ public class LoginAsyncTask extends AsyncTask<String, Void, Boolean>{
 		this.mContext = mContext;
 		this.mHandler = mHandler;
 	}
+	
+	
+	public static boolean checkLoggedin(Handler paramHandler,Document paramDocument){
+		if (!paramDocument.select("div.alert_error").isEmpty())
+	    {
+	      if (paramHandler != null)
+	      {
+	        Message localMessage = Message.obtain();
+	        localMessage.what = -1;
+	        Bundle localBundle = new Bundle();
+	        localBundle.putString("ERROR_MSG", "登录失败,请检查账户信息");
+	        localMessage.setData(localBundle);
+	        paramHandler.sendMessage(localMessage);
+	      }
+	      return false;
+	    }
+	    return true;
+		
+		
+		
+	} 
+	
+	
 
 	/**
 	 * 1、获取cdb_sid cookie
@@ -135,9 +158,6 @@ public class LoginAsyncTask extends AsyncTask<String, Void, Boolean>{
 				if (loginStep3(formhash)) {
 					
 					HttpUtils.saveAuth(mContext, cookieStore);
-					
-					
-					
 					
 					return true;
 				}
