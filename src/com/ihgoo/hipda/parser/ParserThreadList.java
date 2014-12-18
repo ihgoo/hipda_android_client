@@ -1,4 +1,4 @@
-package com.itheima.hipda.parser;
+package com.ihgoo.hipda.parser;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -11,12 +11,12 @@ import android.util.Log;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
-import com.itheima.hipda.bean.ThreadBean;
-import com.itheima.hipda.bean.ThreadListBean;
-import com.itheima.hipda.net.StringRequestProxy;
-import com.itheima.hipda.ui.fragment.NotifyHelper;
-import com.itheima.hipda.utils.HttpUtils;
-import com.itheima.hipda.utils.VolleyHelper;
+import com.ihgoo.hipda.bean.ThreadBean;
+import com.ihgoo.hipda.bean.ThreadListBean;
+import com.ihgoo.hipda.net.StringRequestProxy;
+import com.ihgoo.hipda.ui.fragment.NotifyHelper;
+import com.ihgoo.hipda.utils.HttpUtils;
+import com.ihgoo.hipda.utils.VolleyHelper;
 
 public class ParserThreadList
 {

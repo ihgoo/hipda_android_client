@@ -1,4 +1,4 @@
-package com.itheima.hipda.net;
+package com.ihgoo.hipda.net;
 
 
 
@@ -8,10 +8,10 @@ import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import com.itheima.hipda.bean.ForumThreadDetailInfo;
-import com.itheima.hipda.parser.PageParser;
-import com.itheima.hipda.utils.BBSAPI;
-import com.itheima.hipda.utils.StreamUtils;
+import com.ihgoo.hipda.bean.ForumThreadDetailInfo;
+import com.ihgoo.hipda.parser.PageParser;
+import com.ihgoo.hipda.utils.BBSAPI;
+import com.ihgoo.hipda.utils.StreamUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.RequestParams;

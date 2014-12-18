@@ -1,7 +1,8 @@
-package com.itheima.hipda.net;
+package com.ihgoo.hipda.net;
 
 import java.util.HashMap;
 import java.util.Map;
+
 
 
 import com.android.volley.AuthFailureError;
@@ -10,7 +11,7 @@ import com.android.volley.Response;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.android.volley.toolbox.StringRequest;
-import com.itheima.hipda.ApplicationController;
+import com.ihgoo.hipda.ApplicationController;
 
 /**
  * 保存response中的cookies的volley请求

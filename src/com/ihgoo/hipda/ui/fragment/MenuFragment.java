@@ -1,4 +1,4 @@
-package com.itheima.hipda.ui.fragment;
+package com.ihgoo.hipda.ui.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.itheima.hipda.MainActivity;
+import com.ihgoo.hipda.MainActivity;
+import com.ihgoo.hipda.adapter.LeftAdapter;
 import com.itheima.hipda.R;
-import com.itheima.hipda.adapter.LeftAdapter;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnItemClick;

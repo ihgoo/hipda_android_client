@@ -1,4 +1,4 @@
-package com.itheima.hipda.async;
+package com.ihgoo.hipda.async;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -11,11 +11,11 @@ import android.os.Message;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.android.volley.VolleyError;
+import com.ihgoo.hipda.bean.ThreadListBean;
+import com.ihgoo.hipda.net.StringRequestProxy;
+import com.ihgoo.hipda.parser.ParserThreadList;
+import com.ihgoo.hipda.utils.VolleyHelper;
 import com.itheima.hipda.R.string;
-import com.itheima.hipda.bean.ThreadListBean;
-import com.itheima.hipda.net.StringRequestProxy;
-import com.itheima.hipda.parser.ParserThreadList;
-import com.itheima.hipda.utils.VolleyHelper;
 
 public class ThreadListLoader extends AsyncTaskLoader<ThreadListBean> {
 	private Context mContext;

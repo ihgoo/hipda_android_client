@@ -1,4 +1,4 @@
-package com.itheima.hipda.adapter;
+package com.ihgoo.hipda.adapter;
 
 import com.itheima.hipda.R;
 

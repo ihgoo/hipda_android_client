@@ -1,4 +1,4 @@
-package com.itheima.hipda.utils;
+package com.ihgoo.hipda.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

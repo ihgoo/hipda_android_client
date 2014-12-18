@@ -1,4 +1,4 @@
-package com.itheima.hipda.net;
+package com.ihgoo.hipda.net;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
-import com.itheima.hipda.bean.SettingHelper;
+import com.ihgoo.hipda.bean.SettingHelper;
 
 /**
  * 自定义的volley请求

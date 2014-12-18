@@ -1,4 +1,4 @@
-package com.itheima.hipda.utils;
+package com.ihgoo.hipda.utils;
 
 import java.util.Iterator;
 
@@ -7,7 +7,7 @@ import org.apache.http.cookie.Cookie;
 
 import android.content.Context;
 
-import com.itheima.hipda.bean.SettingHelper;
+import com.ihgoo.hipda.bean.SettingHelper;
 
 public class HttpUtils {
 

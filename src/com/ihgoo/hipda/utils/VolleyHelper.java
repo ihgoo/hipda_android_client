@@ -1,4 +1,4 @@
-package com.itheima.hipda.utils;
+package com.ihgoo.hipda.utils;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;

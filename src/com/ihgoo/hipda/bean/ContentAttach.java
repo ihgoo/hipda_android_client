@@ -1,6 +1,6 @@
-package com.itheima.hipda.bean;
+package com.ihgoo.hipda.bean;
 
-import com.itheima.hipda.utils.HiUtils;
+import com.ihgoo.hipda.utils.HiUtils;
 
 public class ContentAttach extends ContentAbs {
 	private String mTitle;

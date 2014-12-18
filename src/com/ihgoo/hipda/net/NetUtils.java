@@ -1,8 +1,8 @@
-package com.itheima.hipda.net;
+package com.ihgoo.hipda.net;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.itheima.hipda.GloableParams;
+import com.ihgoo.hipda.GloableParams;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

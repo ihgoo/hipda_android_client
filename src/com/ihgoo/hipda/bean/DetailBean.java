@@ -1,4 +1,4 @@
-package com.itheima.hipda.bean;
+package com.ihgoo.hipda.bean;
 
 import java.util.ArrayList;
 

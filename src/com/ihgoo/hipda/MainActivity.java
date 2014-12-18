@@ -1,9 +1,10 @@
-package com.itheima.hipda;
+package com.ihgoo.hipda;
 
 import android.os.Bundle;
 import android.view.Window;
 
-import com.itheima.hipda.ui.fragment.MenuFragment;
+import com.ihgoo.hipda.ui.fragment.MenuFragment;
+import com.itheima.hipda.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 

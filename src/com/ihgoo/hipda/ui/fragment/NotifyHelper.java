@@ -1,4 +1,4 @@
-package com.itheima.hipda.ui.fragment;
+package com.ihgoo.hipda.ui.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

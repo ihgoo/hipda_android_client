@@ -1,4 +1,4 @@
-package com.itheima.hipda.parser;
+package com.ihgoo.hipda.parser;
 
 
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.itheima.hipda.GloableParams;
-import com.itheima.hipda.bean.ForumThreadDetailInfo;
-import com.itheima.hipda.bean.TopicInfo;
+import com.ihgoo.hipda.GloableParams;
+import com.ihgoo.hipda.bean.ForumThreadDetailInfo;
+import com.ihgoo.hipda.bean.TopicInfo;
 
 
 /**

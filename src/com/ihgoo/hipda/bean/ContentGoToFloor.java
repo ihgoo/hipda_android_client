@@ -1,4 +1,4 @@
-package com.itheima.hipda.bean;
+package com.ihgoo.hipda.bean;
 
 public class ContentGoToFloor extends ContentAbs {
 	private int floor;

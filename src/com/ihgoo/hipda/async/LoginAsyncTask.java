@@ -1,4 +1,4 @@
-package com.itheima.hipda.async;
+package com.ihgoo.hipda.async;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -23,10 +23,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
+import com.ihgoo.hipda.bean.SettingHelper;
+import com.ihgoo.hipda.utils.BBSAPI;
+import com.ihgoo.hipda.utils.HttpUtils;
 import com.itheima.hipda.R;
-import com.itheima.hipda.bean.SettingHelper;
-import com.itheima.hipda.utils.BBSAPI;
-import com.itheima.hipda.utils.HttpUtils;
 
 /**
  * 异步登录

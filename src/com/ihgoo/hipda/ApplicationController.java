@@ -1,4 +1,4 @@
-package com.itheima.hipda;
+package com.ihgoo.hipda;
 
 import android.app.Application;
 import android.text.TextUtils;

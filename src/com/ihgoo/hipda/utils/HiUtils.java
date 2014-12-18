@@ -1,10 +1,10 @@
-package com.itheima.hipda.utils;
+package com.ihgoo.hipda.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.itheima.hipda.bean.SettingHelper;
+import com.ihgoo.hipda.bean.SettingHelper;
 
 public class HiUtils {
 
