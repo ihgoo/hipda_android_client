@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:padding="@dimen/footer_padding" android:layout_width="fill_parent" android:layout_height="@dimen/footer_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ProgressBar android:id="@id/footer_progressbar" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
-        <TextView android:textColor="@color/hipda" android:id="@id/footer_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/footer_hint_load_normal" android:layout_centerInParent="true" />
-        <ImageView android:id="@id/footer_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_toLeftOf="@id/footer_hint_text" android:contentDescription="@null" />
-    </RelativeLayout>
-</LinearLayout>
