@@ -86,7 +86,7 @@
             android:singleLine="true"
             android:title="@string/pref_title_blanklist" />
 
-        <net.jejer.hipda.ui.AboutDialogPreference
+        <me.xunhou.hipda.ui.AboutDialogPreference
             android:title="@string/pref_title_about" />
     </PreferenceCategory>
 
