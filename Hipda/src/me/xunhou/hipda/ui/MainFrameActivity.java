@@ -1,19 +1,16 @@
 package me.xunhou.hipda.ui;
 
-import me.xunhou.hipda.adapter.DrawerAdapter;
 import me.xunhou.hipda.async.PostAsyncTask;
 import me.xunhou.hipda.async.SimpleListLoader;
 import me.xunhou.hipda.async.VolleyHelper;
 import me.xunhou.hipda.bean.HiSettingsHelper;
 import net.jejer.hipda.R;
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
-import android.support.v4.widget.DrawerLayout;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -25,8 +22,8 @@ import android.widget.Toast;
 public class MainFrameActivity extends Activity {
 	private final String LOG_TAG = getClass().getSimpleName();
 
-	private DrawerLayout mDrawerLayout;
-	private ListView mDrawerList;
+//	private DrawerLayout mDrawerLayout;
+//	private ListView mDrawerList;
 	private boolean mEnableSwipe = false;
 	private OnSwipeTouchListener mSwipeListener;
 	private Fragment mOnSwipeCallback = null;
@@ -48,15 +45,18 @@ public class MainFrameActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_frame);
 
-
+		
+		
+		
+		
 		// Prepare Drawer
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		mDrawerList = (ListView) findViewById(R.id.left_drawer);
-		String[] drwerListTitle = getResources().getStringArray(R.array.left_menu);
-		DrawerAdapter adapter = new DrawerAdapter(this, R.layout.item_drawer, drwerListTitle);
-		mDrawerList.setAdapter(adapter);
-		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-		getActionBar().setHomeButtonEnabled(true);
+//		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//		mDrawerList = (ListView) findViewById(R.id.left_drawer);
+//		String[] drwerListTitle = getResources().getStringArray(R.array.left_menu);
+//		DrawerAdapter adapter = new DrawerAdapter(this, R.layout.item_drawer, drwerListTitle);
+//		mDrawerList.setAdapter(adapter);
+//		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+//		getActionBar().setHomeButtonEnabled(true);
 
 		// Prepare gesture detector
 		mSwipeListener = new OnSwipeTouchListener(this){
@@ -172,12 +172,12 @@ public class MainFrameActivity extends Activity {
 			return true;
 		} else {
 			if (!backPressed) {
-				mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
-				if (!mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
-					mDrawerLayout.openDrawer(Gravity.LEFT);
-				} else {
-					mDrawerLayout.closeDrawers();
-				}
+//				mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+//				if (!mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
+//					mDrawerLayout.openDrawer(Gravity.LEFT);
+//				} else {
+//					mDrawerLayout.closeDrawers();
+//				}
 			}
 			return false;
 		}
@@ -275,7 +275,7 @@ public class MainFrameActivity extends Activity {
 				break;
 			}
 
-			mDrawerLayout.closeDrawer(mDrawerList);
+//			mDrawerLayout.closeDrawer(mDrawerList);
 		}
 	}
 
@@ -295,10 +295,10 @@ public class MainFrameActivity extends Activity {
 			Log.v(LOG_TAG, "getBackStackEntryCount = "+String.valueOf(fm.getBackStackEntryCount()));
 			if (!HiSettingsHelper.getInstance().getIsLandscape()) {
 				if (fm.getBackStackEntryCount() > 0) {
-					mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+//					mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 					mEnableSwipe = true;
 				} else {
-					mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+//					mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
 					mEnableSwipe = false;
 				}
 			}

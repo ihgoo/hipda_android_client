@@ -57,11 +57,11 @@ public class DrawerAdapter extends ArrayAdapter<String> {
 			color = mCtx.getResources().getColor(R.color.orange);
 			icon = mCtx.getResources().getDrawable(R.drawable.google_contrast);
 		} else if (title.contains("短消息")) {
-			NotifyHelper.getInstance().initSmsItemTextView(holder.tv_title);
+//			NotifyHelper.getInstance().initSmsItemTextView(holder.tv_title);
 			color = mCtx.getResources().getColor(R.color.red);
 			icon = mCtx.getResources().getDrawable(R.drawable.google_mail);
 		} else if (title.contains("帖子消息")) {
-			NotifyHelper.getInstance().initThreadItemTextView(holder.tv_title);
+//			NotifyHelper.getInstance().initThreadItemTextView(holder.tv_title);
 			color = mCtx.getResources().getColor(R.color.darkblue);
 			icon = mCtx.getResources().getDrawable(R.drawable.google_info2);
 		} else if (title.contains("发表新帖")) {

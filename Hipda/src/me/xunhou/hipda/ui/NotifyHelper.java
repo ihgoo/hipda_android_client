@@ -14,15 +14,15 @@ public class NotifyHelper {
 	private int mCntSMS = 0;
 	private int mCntThread = 0;
 
-	private TextView mViewSmsItemTextView;
-	private TextView mViewThreadItemTextView;
+//	private TextView mViewSmsItemTextView;
+//	private TextView mViewThreadItemTextView;
 
-	public void initSmsItemTextView(TextView smsItemTextView) {
-		mViewSmsItemTextView = smsItemTextView;
-	}
-	public void initThreadItemTextView(TextView threadItemTextView) {
-		mViewThreadItemTextView = threadItemTextView;
-	}
+//	public void initSmsItemTextView(TextView smsItemTextView) {
+//		mViewSmsItemTextView = smsItemTextView;
+//	}
+//	public void initThreadItemTextView(TextView threadItemTextView) {
+//		mViewThreadItemTextView = threadItemTextView;
+//	}
 
 	public void init(Activity activity) {
 		mActivity = activity;
@@ -52,17 +52,17 @@ public class NotifyHelper {
 		mActivity.runOnUiThread( new Runnable() {
 			@Override 
 			public void run() {
-				if (mCntSMS > 0) {
-					mViewSmsItemTextView.setText("短消息 (" + mCntSMS + ")");
-				} else {
-					mViewSmsItemTextView.setText("短消息");
-				}
+//				if (mCntSMS > 0) {
+//					mViewSmsItemTextView.setText("短消息 (" + mCntSMS + ")");
+//				} else {
+//					mViewSmsItemTextView.setText("短消息");
+//				}
 
-				if (mCntThread > 0) {
-					mViewThreadItemTextView.setText("帖子消息 (" + mCntThread + ")");
-				} else {
-					mViewThreadItemTextView.setText("帖子消息");
-				}
+//				if (mCntThread > 0) {
+//					mViewThreadItemTextView.setText("帖子消息 (" + mCntThread + ")");
+//				} else {
+//					mViewThreadItemTextView.setText("帖子消息");
+//				}
 			}
 		});
 

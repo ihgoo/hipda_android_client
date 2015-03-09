@@ -93,6 +93,14 @@ public class ThreadListFragment extends Fragment {
 				return true;
 			}
 		};
+		
+		int forumId = HiUtils.getForumID(mCtx, 0);
+		if (mForumId != forumId) {
+			mForumId = forumId;
+//			mForumSelect = getActivity().getActionBar().getSelectedNavigationIndex();
+			refresh();
+		}
+
 		mSpinnerAdapter = ArrayAdapter.createFromResource(mCtx, R.array.forums,
 				android.R.layout.simple_spinner_dropdown_item);
 	}
@@ -144,40 +152,40 @@ public class ThreadListFragment extends Fragment {
 		mThreadListView.setOnScrollListener(new OnScrollCallback());
 	}
 
-	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		Log.v(LOG_TAG, "onCreateOptionsMenu");
+//	@Override
+//	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//		Log.v(LOG_TAG, "onCreateOptionsMenu");
+//
+//		menu.clear();
+//		inflater.inflate(R.menu.menu_thread_list, menu);
+//
+//		getActivity().getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+//		getActivity().getActionBar().setTitle("");
+//		getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
+//		getActivity().getActionBar().setListNavigationCallbacks(mSpinnerAdapter, mOnNavigationListener);
+//		getActivity().getActionBar().setSelectedNavigationItem(mForumSelect==-1?0:mForumSelect);
+//
+//		super.onCreateOptionsMenu(menu,inflater);
+//	}
 
-		menu.clear();
-		inflater.inflate(R.menu.menu_thread_list, menu);
-
-		getActivity().getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
-		getActivity().getActionBar().setTitle("");
-		getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
-		getActivity().getActionBar().setListNavigationCallbacks(mSpinnerAdapter, mOnNavigationListener);
-		getActivity().getActionBar().setSelectedNavigationItem(mForumSelect==-1?0:mForumSelect);
-
-		super.onCreateOptionsMenu(menu,inflater);
-	}
-
-	@Override
-	public boolean onOptionsItemSelected (MenuItem item) {
-		Log.v(LOG_TAG, "onOptionsItemSelected");
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			// Implemented in activity
-			return false;
-		case R.id.action_refresh_list:
-			refresh();
-			return true;
-		case R.id.action_thread_list_settings:
-			showThreadListSettingsDialog();
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
-
-	}
+//	@Override
+//	public boolean onOptionsItemSelected (MenuItem item) {
+//		Log.v(LOG_TAG, "onOptionsItemSelected");
+//		switch (item.getItemId()) {
+//		case android.R.id.home:
+//			// Implemented in activity
+//			return false;
+//		case R.id.action_refresh_list:
+//			refresh();
+//			return true;
+//		case R.id.action_thread_list_settings:
+//			showThreadListSettingsDialog();
+//			return true;
+//		default:
+//			return super.onOptionsItemSelected(item);
+//		}
+//
+//	}
 
 	@Override
 	public void onPause() {

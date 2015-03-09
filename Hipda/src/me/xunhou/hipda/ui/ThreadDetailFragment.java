@@ -13,7 +13,6 @@ import me.xunhou.hipda.bean.HiSettingsHelper;
 import me.xunhou.hipda.utils.HiUtils;
 import me.xunhou.hipda.view.xlistview.XListView;
 import net.jejer.hipda.R;
-import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.LoaderManager;
@@ -219,19 +218,19 @@ public class ThreadDetailFragment extends Fragment {
 		showOrLoadPage();
 	};
 
-	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		Log.v(LOG_TAG, "onCreateOptionsMenu");
-
-		menu.clear();
-		inflater.inflate(R.menu.menu_thread_detail, menu);
-
-		getActivity().getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-		getActivity().getActionBar().setTitle(mTitle);
-		getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-
-		super.onCreateOptionsMenu(menu,inflater);
-	}
+//	@Override
+//	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//		Log.v(LOG_TAG, "onCreateOptionsMenu");
+//
+//		menu.clear();
+//		inflater.inflate(R.menu.menu_thread_detail, menu);
+//
+//		getActivity().getActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+//		getActivity().getActionBar().setTitle(mTitle);
+//		getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+//
+//		super.onCreateOptionsMenu(menu,inflater);
+//	}
 
 	@Override
 	public boolean onOptionsItemSelected (MenuItem item) {
@@ -577,9 +576,10 @@ public class ThreadDetailFragment extends Fragment {
 	}
 
 	private void showOrLoadPage() {
-		getActivity().getActionBar().setTitle("("+
-				String.valueOf(mCurrentPage)+"/"+String.valueOf(mMaxPage)
-				+")"+mTitle);
+		// TODO
+//		getActivity().getActionBar().setTitle("("+
+//				String.valueOf(mCurrentPage)+"/"+String.valueOf(mMaxPage)
+//				+")"+mTitle);
 
 		if (mCache.get(mCurrentPage) != null) {
 			mAdapter.clear();

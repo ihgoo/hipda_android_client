@@ -35,7 +35,7 @@ public class HiNwkImgView extends ImageView {
 		mCtx = context;
 //		setDefaultImageResId(R.drawable.ic_action_picture);
 //		this.setErrorImageResId(R.drawable.tapatalk_image_broken);
-		this.setBackgroundResource(R.drawable.ic_action_picture);
+		this.setImageResource(R.drawable.ic_action_picture);
 		setOnClickListener(new HiNwkImgViewClickHandler());
 		setClickable(true);
 	}
@@ -44,15 +44,10 @@ public class HiNwkImgView extends ImageView {
 		mUrl = url;
 		if (HiUtils.isAutoLoadImg(mCtx)) {
 			ImageLoader.getInstance().displayImage(url, this);
-			
-			
-//			setImageUrl(url, VolleyHelper.getInstance().getImgLoader());
 		} else {
 			//set LayoutParams, otherwise default image will not show.
 			setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, 48));
-
 			ImageLoader.getInstance().displayImage("", this);
-//			setImageUrl("", VolleyHelper.getInstance().getImgLoader());
 		}
 	}
 
